@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="10dp"
+    android:layout_marginLeft="10dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/names" />
+
+            <EditText
+                android:id="@+id/editName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/names"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mobile" />
+
+            <EditText
+                android:id="@+id/editPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/mobile"
+                android:inputType="phone" />
+
+            <TextView
+                android:id="@+id/textPax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pax" />
+
+            <EditText
+                android:id="@+id/editPax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/pax"
+                android:inputType="number" />
+
+            <CheckBox
+                android:id="@+id/checkSmoking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/smoking" />
+
+            <TextView
+                android:id="@+id/entertime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/enterTime" />
+
+            <TimePicker
+                android:id="@+id/timePicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:timePickerMode="spinner" />
+
+            <TextView
+                android:id="@+id/enterdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/enterDate" />
+
+            <DatePicker
+                android:id="@+id/datePicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonSubmit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/submit" />
+
+                <Button
+                    android:id="@+id/buttonReset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/reset" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
